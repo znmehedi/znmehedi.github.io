@@ -299,7 +299,7 @@ h1,h2,h3,h4,h5
     }
 #portfolio .portfolio-thumb
     {
-        overflow: scroll;
+        overflow: none;
         position: relative;
         margin-bottom: 30px;
     }
