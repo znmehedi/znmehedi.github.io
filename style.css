@@ -101,3 +101,45 @@ input:focus,textarea:focus{outline:none;border-color:var(--accent)}
 #formMsg{font-size:14px;color:var(--accent2);min-height:20px;text-align:center}
 footer{padding:34px 0;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line);position:relative;z-index:1}
 section,footer{position:relative;z-index:1}
+
+/* Social Icon Buttons */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 35px; /* Spacing between icons and the form */
+  margin-top: 25px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px; /* Creates the rounded square look */
+  background-color: var(--bg2, #1a1a1a); /* Fallback to dark color if var is missing */
+  color: var(--muted, #a1a1aa);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* SVG Icon sizing */
+.social-btn svg {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effects */
+.social-btn:hover {
+  background-color: var(--accent, #7c3aed); /* Uses your primary purple color */
+  color: #ffffff;
+  border-color: var(--accent, #7c3aed);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(124, 58, 237, 0.3); /* Glow effect matching your theme */
+}
+
+.social-btn:hover svg {
+  transform: scale(1.1);
+}
