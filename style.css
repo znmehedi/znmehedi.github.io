@@ -143,3 +143,19 @@ section,footer{position:relative;z-index:1}
 .social-btn:hover svg {
   transform: scale(1.1);
 }
+/* Recommendation */
+.quote{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:34px 32px 28px;max-width:820px}
+.quote::before{content:"“";position:absolute;top:-6px;left:22px;font-size:90px;line-height:1;color:var(--accent);opacity:.5;font-family:Georgia,serif}
+.quote blockquote{color:var(--text);font-size:17px;line-height:1.7;margin-top:14px}
+.quote blockquote p{margin-bottom:14px}
+.quote details summary{cursor:pointer;color:var(--accent);font-weight:500;font-size:14px;margin:4px 0 14px;list-style:none}
+.quote details summary::-webkit-details-marker{display:none}
+.quote details[open] summary .more{display:none}
+.quote details:not([open]) summary .less{display:none}
+.quote details p{color:var(--muted);font-size:16px;margin-bottom:14px}
+.who{display:flex;align-items:center;gap:14px;border-top:1px solid var(--line);padding-top:18px;margin-top:6px;flex-wrap:wrap}
+.avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;font-weight:700;color:#fff;flex:none}
+.who b{display:block}
+.who span{color:var(--muted);font-size:13px}
+.who .src{margin-left:auto;font-size:13px;color:var(--accent);font-weight:500}
+.who .src:hover{text-decoration:underline}
